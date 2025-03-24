@@ -28,6 +28,7 @@ const toggleTheme = () => {
 
 window.addEventListener('DOMContentLoaded', () => {
     setupTheme();
+    changeButtonTheme();
 })
 
 const setupTheme = () => {
@@ -39,5 +40,4 @@ const setupTheme = () => {
     }
 
     document.documentElement.setAttribute('data-bs-theme', localStorage.getItem('theme'));
-    changeButtonTheme();
 }
