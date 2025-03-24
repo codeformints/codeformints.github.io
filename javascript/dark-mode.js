@@ -27,6 +27,10 @@ const toggleTheme = () => {
 }
 
 window.addEventListener('DOMContentLoaded', () => {
+    setupTheme();
+})
+
+const setupTheme = () => {
     var theme = localStorage.getItem('theme');
 
     if(theme != 'dark' && theme != 'light')
@@ -36,4 +40,4 @@ window.addEventListener('DOMContentLoaded', () => {
 
     document.documentElement.setAttribute('data-bs-theme', localStorage.getItem('theme'));
     changeButtonTheme();
-})
+}
