@@ -36,7 +36,7 @@ const setupTheme = () => {
 
     if(theme != 'dark' && theme != 'light')
     {
-        localStorage.setItem('theme', 'light');
+        localStorage.setItem('theme', 'dark');
     }
 
     document.documentElement.setAttribute('data-bs-theme', localStorage.getItem('theme'));
